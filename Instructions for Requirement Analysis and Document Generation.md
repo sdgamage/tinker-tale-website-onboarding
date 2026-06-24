@@ -61,13 +61,42 @@ Now generate a structured list of clarification questions.
 - Assumptions: include only those where the wrong assumption would cause rework
 
 **At the end of Phase 2, output a summary line:**
-> "I found [X] contradictions, [Y] ambiguities, [Z] missing items, and [W] assumptions. Please answer all questions above and I will proceed to generate both documents."
+> "I found [X] contradictions, [Y] ambiguities, [Z] missing items, and [W] assumptions. Please answer the questions above. For any question you'd like sent to the client, mark it or tell me and I'll create a Tally form for those."
 
 ---
 
-## PHASE 3 — WAIT FOR ANSWERS
+## PHASE 3 — CLARIFICATION LOOP
 
-Do not proceed to Phase 4 until the human provides answers to all questions. If they skip a question, ask them to address it before continuing. If they add new information that creates new questions, ask those follow-up questions before proceeding.
+**This phase repeats until every single question is resolved. Do not proceed to Phase 4 until all questions are cleared — no exceptions.**
+
+### Step 1 — Collect direct answers
+Present all questions and wait for the human to answer them directly in the conversation. Show any already-answered questions with their answers for visibility.
+
+### Step 2 — Handle client-flagged questions
+When the human marks one or more questions as "send to client" (either by saying so or by indicating a question should go to the client), do the following:
+
+1. Acknowledge which questions are being sent to the client.
+2. Create a Tally form immediately for only those flagged questions.
+   - **Put each question on its own page** (use PAGE_BREAK between every question).
+   - **Enable auto-advance** on every multiple-choice and single-select question so the form moves to the next page automatically once the client selects an answer — do not require them to click "Next" manually. Use `configure_blocks` after creating the question blocks to set `autoProgress: true` on each question block.
+   - Write all question text in plain, non-technical language appropriate for a business owner or end client.
+   - Include an "Other (please describe)" option on every MCQ where a realistic unlisted answer exists.
+3. Share the Tally form URL with the human so they can send it to the client.
+
+### Step 3 — Process new answers and loop
+When the human shares the client's Tally responses:
+1. Record every answer.
+2. Re-analyse all answers (both direct and Tally) for new contradictions, ambiguities, or missing information created by those answers.
+3. If new questions arise, present them using the same Phase 2 format and repeat this loop from Step 1.
+4. If some new questions should go to the client, repeat Step 2 — create a **new** Tally form for the new batch (do not reuse the old form).
+
+### Step 4 — Gate check before proceeding
+Only move to Phase 4 when ALL of the following are true:
+- Every question from every round has a confirmed answer.
+- No new contradictions, ambiguities, or missing items remain.
+- The human has explicitly confirmed (or there is nothing left to ask).
+
+If anything is still unresolved, stay in Phase 3 and surface the remaining gaps.
 
 ---
 

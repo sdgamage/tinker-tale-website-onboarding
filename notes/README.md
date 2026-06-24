@@ -1,0 +1,1 @@
+Drop all raw notes (transcripts, voice note summaries, emails, chat exports) into this folder before running the project.

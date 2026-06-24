@@ -1,0 +1,118 @@
+
+Questions to Dilsha:
+NOTE: Some questions were not answered.
+
+Which countries do you want to launch with on day one?
+Ans: Uk, SL
+
+
+
+Currencies:
+Usd, gbp, lKr
+
+Should product prices be: Manually set per currency, or Automatically converted using live exchange rates?
+Automatic
+
+
+
+For international buyers, should prices be shown: Inclusive of tax, or Exclusive of tax
+Inclusive of tax.
+
+Do you require: Card payments only?
+Cod for sri lankan customers.
+No bank transfer.
+
+
+- - - - 
+Which courier partners are you currently using or planning to use:
+
+Local courier name:
+Koombiyo
+
+International courier name (DHL, FedEx, Aramex, etc.)
+DHL: wp plugin
+
+- - - - 
+
+Do these couriers provide:
+An official API, or
+
+Rate cards only
+
+- - - - -
+
+How shipping rates be calculated:
+
+Based on weight?
+- - volumetric: weight + volume
+
+Based on destination country?
+not based on country.
+
+Flat rates per zone?
+
+Or manually overridden per order?
+
+
+- - - - - 
+
+Should shipping costs be:
+
+Shown before checkout, or
+
+Confirmed after order placement
+
+SHOULD show FINAL PRICE
+
+
+- - - - - 
+
+
+Do you want:
+
+Auto-response email to bulk enquiry submitters?
+
+Admin notes or status (new, contacted, quoted)?
+
+ONLY FOR ADMIN & BIZ PARTNER
+- ALSO DISPLAY IN DB
+- - - - - 
+
+Do different staff need different access levels, or is one admin role enough?
+ADMIN USER NEED, ORDERS BALANA KENAAT
+- - - - - 
+
+Is one online training session sufficient, or do you expect:
+
+Recorded videos
+
+Written manuals?
+
+
+
+- - -- - -  -
+
+Will you provide:
+
+Privacy policy
+
+Terms & conditions
+
+Cookie text
+Or should we use standard templates?
+
+OKAY WITH TEMPLATES
+- - - - - - 
+
+Do you expect:
+
+Only bug fixes under annual support, or
+
+Small feature improvements as well?
+
+
+YES: QUARTERLY.
+
+
+- - - - - - 
+

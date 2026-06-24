@@ -78,7 +78,6 @@ When the human marks one or more questions as "send to client" (either by saying
 1. Acknowledge which questions are being sent to the client.
 2. Create a Tally form immediately for only those flagged questions.
    - **Put each question on its own page** (use PAGE_BREAK between every question).
-   - **Enable auto-advance** on every multiple-choice and single-select question so the form moves to the next page automatically once the client selects an answer — do not require them to click "Next" manually. Use `configure_blocks` after creating the question blocks to set `autoProgress: true` on each question block.
    - Write all question text in plain, non-technical language appropriate for a business owner or end client.
    - Include an "Other (please describe)" option on every MCQ where a realistic unlisted answer exists.
 3. Share the Tally form URL with the human so they can send it to the client.
